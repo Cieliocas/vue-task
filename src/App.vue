@@ -3,6 +3,28 @@
 // import NumberInput from './components/NumberInput.vue';
 // import OperationSelect from './components/OperationSelect.vue';
 import ResultDisplay from './components/ResultDisplay.vue';
+
+const number1 = ref(0);
+const number2 = ref(0);
+const operation = ref('+');
+
+const result = computed(() => {
+	const num1 = parseFloat(number1.value);
+	const num2 = parseFloat(number2.value);
+
+	switch (operation.value) {
+		case '+':
+			return num1 + num2;
+		case '-':
+			return num1 - num2;
+		case '*':
+			return num1 * num2;
+		case '/':
+			return num2 !== 0 ? num1 / num2 : 'Erro: Divisão por zero';
+		default:
+			return 'Operação inválida';
+	}
+});
 </script>
 
 <template>
