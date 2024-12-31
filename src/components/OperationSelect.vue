@@ -50,6 +50,6 @@
 
     select:focus {
         outline: none;
-        box-shadow: 0 0 0 2px rgba(41, 255, 201, 0.5);
+        box-shadow: 0 0 0 2px rgb(0, 255, 191);
     }
 </style>
