@@ -1,5 +1,5 @@
 
-# Calculadora Aritmética Vue.js
+# [PT-BR] Calculadora Aritmética Vue.js
 
 Este projeto é uma calculadora aritmética simples implementada usando Vue.js 3. A calculadora permite que os usuários realizem operações básicas de adição, subtração, multiplicação e divisão.
 
@@ -86,3 +86,93 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir *issues* ou envi
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+
+# [EN] Arithmetic Calculator Vue.js
+
+This project is a simple arithmetic calculator implemented using Vue.js 3. The calculator allows users to perform basic operations such as addition, subtraction, multiplication, and division.
+
+## Project Structure
+
+```
+arithmetic-calculator/
+│
+├── src/
+│   ├── components/
+│   │   ├── NumberInput.vue
+│   │   ├── OperationSelect.vue
+│   │   └── ResultDisplay.vue
+│   │
+│   ├── App.vue
+│   └── main.js
+│
+├── public/
+│   └── index.html
+│
+├── package.json
+└── README.md
+```
+
+## Components
+
+### 1. App.vue (Main Component)
+This is the main component that integrates all other components. It manages the calculator's state and performs calculations based on user input.
+
+### 2. NumberInput.vue
+This component is used for number input. It is reused for both operands of the calculator.
+
+### 3. OperationSelect.vue
+This component allows the user to select the desired arithmetic operation (addition, subtraction, multiplication, or division).
+
+### 4. ResultDisplay.vue
+This component displays the result of the arithmetic operation.
+
+## How It Works
+
+1. The user enters two numbers using the `NumberInput` components.
+2. The user selects an operation using the `OperationSelect` component.
+3. The main component `App.vue` observes these changes and recalculates the result automatically.
+4. The result is displayed in the `ResultDisplay` component.
+
+The calculator uses Vue.js reactivity to update the result in real-time without the need for a calculate button.
+
+## Features
+
+- Performs addition, subtraction, multiplication, and division operations.
+- Updates the result in real-time as the user changes numbers or the operation.
+- Has a responsive design with a dark theme.
+- Handles division by zero by displaying an appropriate error message.
+
+## How to Run the Project
+
+1. Make sure Node.js is installed on your machine.  
+2. Clone this repository:  
+   ```bash
+   git clone https://github.com/your-username/arithmetic-calculator.git
+   ```  
+3. Navigate to the project directory:  
+   ```bash
+   cd arithmetic-calculator
+   ```  
+4. Install the dependencies:  
+   ```bash
+   npm install
+   ```  
+5. Run the project in development mode:  
+   ```bash
+   npm run dev
+   ```  
+6. Open your browser and go to `http://localhost:5173` (or the port indicated in the terminal).
+
+## Customization
+
+You can customize the calculator's theme by adjusting the colors in the `App.vue` file and individual components.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests with improvements.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
