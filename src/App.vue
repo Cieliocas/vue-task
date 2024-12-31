@@ -43,9 +43,9 @@
 	body {
 		margin: 0;
 		padding: 0;
-		background-color: #141414;
-		color: white;
-		font-family: Arial, sans-serif;
+		background-color: #212121;
+		color: #FAFAFA;
+		font-family: "Roboto", serif;
 	}
 
 	.calculator-container {
@@ -56,17 +56,29 @@
 	}
 
 	.calculator-window {
-		background-color: #181216;
+		background: linear-gradient(#212121, #212121) padding-box,
+		linear-gradient(145deg, transparent 35%,#e81cff, #29ffc9) border-box;
 		border-radius: 10px;
 		padding: 20px;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 		max-width: 350px;
 		width: 100%;
+		border: 2px solid transparent;
+		font-size: 14px;
+		color: white;
+		flex-direction: column;
+		box-sizing: border-box;
 	}
 
 	h1 {
 		text-align: center;
-		color: #dba100;
 		margin-bottom: 20px;
+		font-weight: lighter;
+		background-color: #f3ec78;
+		background-image: linear-gradient(45deg, #e81cff, #29ffc9);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent; 
+		-moz-text-fill-color: transparent;
 	}
 </style>

@@ -16,12 +16,14 @@ defineProps(['result']);
 }
 
 h2 {
-    color: #29ffc9;
+    background: -webkit-linear-gradient(#fa02ee, #00cf9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: lighter;
     color: white;
 }
 </style>

@@ -35,16 +35,16 @@
     label {
         display: block;
         margin-bottom: 5px;
-        color: #29ffc9;
+        color: #ffffff;
     }
 
     select {
         width: 100%;
         padding: 8px;
-        border: 1px solid #29ffc9;
+        border: 1px solid #414141;
         border-radius: 4px;
-        background-color: #181216;
-        color: white;
+        background-color: #212121;
+        color: rgb(255, 255, 255);
         font-size: 16px;
     }
 

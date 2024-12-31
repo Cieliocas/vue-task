@@ -30,24 +30,25 @@
 label {
     display: block;
     margin-bottom: 5px;
-    color: #29ffc9;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 12px;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #29ffc9;
-    border-radius: 4px;
-    background-color: #181216;
-    color: white;
-    font-size: 16px;
+    border: 1px solid #414141;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
     box-sizing: border-box;
     height: 40px;
 }
 
 input:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(41, 255, 201, 0.5);
+    border-color: #e81cff;
 }
 
 .input-container {
