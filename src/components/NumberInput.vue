@@ -5,21 +5,21 @@
     </div>
 </template>
 
-<script>
-import { ref, watch } from 'vue';
+<script setup>
+    import { ref, watch } from 'vue';
 
-const props = defineProps(['modelValue', 'label']);
-const emit = defineEmits(['update:modelValue']);
+    const props = defineProps(['modelValue', 'label']);
+    const emit = defineEmits(['update:modelValue']);
 
-const inputValue = ref(props.modelValue);
+    const inputValue = ref(props.modelValue);
 
-watch(() => props.modelValue, (newValue) => {
-    inputValue.value = newValue;
-});
+    watch(() => props.modelValue, (newValue) => {
+        inputValue.value = newValue;
+    });
 
-const updateValue = () => {
-    emit('update:modelValue', inputValue.value);
-};
+    const updateValue = () => {
+        emit('update:modelValue', inputValue.value);
+    };
 </script>
 
 <style scoped>
@@ -35,16 +35,22 @@ label {
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #29ffc9;
     border-radius: 4px;
-    background-color: #392a35;
+    background-color: #181216;
     color: white;
     font-size: 16px;
+    box-sizing: border-box;
+    height: 40px;
 }
 
 input:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(41, 255, 201, 0.5);
+}
+
+.input-container {
+    width: 100%;
 }
 </style>
