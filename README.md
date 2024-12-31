@@ -1,4 +1,13 @@
 # vue-task
+# Calculadora Aritmética Vue.js
+
+Este projeto é uma calculadora aritmética simples implementada usando Vue.js 3. A calculadora permite que os usuários realizem operações básicas de adição, subtração, multiplicação e divisão.
+
+## Estrutura do Projeto
+
+O projeto está estruturado da seguinte forma:
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
