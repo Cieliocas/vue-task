@@ -1,9 +1,20 @@
 <script setup>
-
+// import { ref, computed } from 'vue';
+// import NumberInput from './components/NumberInput.vue';
+// import OperationSelect from './components/OperationSelect.vue';
+import ResultDisplay from './components/ResultDisplay.vue';
 </script>
 
 <template>
-
+	<div class="calculator-container">
+		<div class="calculator-window">
+			<h1>Calculadora Aritmética</h1>
+			<NumberInput v-model="number1" label="Número 1" />
+			<NumberInput v-model="number2" label="Número 2" />
+			<OperationSelect v-model="operation" />
+			<ResultDisplay :result="result" />
+		</div>
+	</div>
 </template>
 
 <style scoped>
