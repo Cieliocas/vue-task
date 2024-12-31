@@ -18,5 +18,11 @@ import ResultDisplay from './components/ResultDisplay.vue';
 </template>
 
 <style scoped>
-
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #392a35;
+	color: white;
+	font-family: Arial, sans-serif;
+}
 </style>
