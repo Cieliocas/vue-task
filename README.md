@@ -8,21 +8,24 @@ Este projeto é uma calculadora aritmética simples implementada usando Vue.js 3
 O projeto está estruturado da seguinte forma:
 
 calculadora-aritmetica/
+
+calculadora-aritmetica/
 │
 ├── src/
 │   ├── components/
-│   │   ├── NumberInput.vue
-│   │   ├── OperationSelect.vue
-│   │   └── ResultDisplay.vue
+│   │   ├── NumberInput.vue        # Componente para entrada de números
+│   │   ├── OperationSelect.vue    # Componente para seleção de operações
+│   │   └── ResultDisplay.vue      # Componente para exibir o resultado
 │   │
-│   ├── App.vue
-│   └── main.js
+│   ├── App.vue                    # Componente principal da aplicação
+│   └── main.js                    # Arquivo de inicialização do Vue.js
 │
 ├── public/
-│   └── index.html
+│   └── index.html                 # Arquivo HTML base da aplicação
 │
-├── package.json
-└── README.md
+├── package.json                   # Configurações do projeto e dependências
+└── README.md                      # Documentação do projeto
+
 
 ## Componentes
 
