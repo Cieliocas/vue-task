@@ -1,5 +1,17 @@
+<template>
+	<div class="calculator-container">
+		<div class="calculator-window">
+			<h1>Calculadora Aritmética</h1>
+			<NumberInput v-model="number1" label="Número 1" />
+			<NumberInput v-model="number2" label="Número 2" />
+			<OperationSelect v-model="operation" />
+			<ResultDisplay :result="result" />
+		</div>
+	</div>
+</template>
+
 <script setup>
-// import { ref, computed } from 'vue';
+import { ref, computed } from 'vue';
 import NumberInput from './components/NumberInput.vue';
 import OperationSelect from './components/OperationSelect.vue';
 import ResultDisplay from './components/ResultDisplay.vue';
@@ -27,18 +39,6 @@ const result = computed(() => {
 });
 </script>
 
-<template>
-	<div class="calculator-container">
-		<div class="calculator-window">
-			<h1>Calculadora Aritmética</h1>
-			<NumberInput v-model="number1" label="Número 1" />
-			<NumberInput v-model="number2" label="Número 2" />
-			<OperationSelect v-model="operation" />
-			<ResultDisplay :result="result" />
-		</div>
-	</div>
-</template>
-
 <style scoped>
 body {
 	margin: 0;
@@ -46,5 +46,27 @@ body {
 	background-color: #392a35;
 	color: white;
 	font-family: Arial, sans-serif;
+}
+
+.calculator-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.calculator-window {
+	background-color: #2c1e29;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	max-width: 350px;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: #29ffc9;
+	margin-bottom: 20px;
 }
 </style>
