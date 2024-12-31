@@ -1,7 +1,7 @@
 <script setup>
 // import { ref, computed } from 'vue';
 import NumberInput from './components/NumberInput.vue';
-// import OperationSelect from './components/OperationSelect.vue';
+import OperationSelect from './components/OperationSelect.vue';
 import ResultDisplay from './components/ResultDisplay.vue';
 
 const number1 = ref(0);
